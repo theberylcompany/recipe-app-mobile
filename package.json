@@ -1,0 +1,14 @@
+{
+  "name": "therecipestack",
+  "version": "0.0.1",
+  "description": "The best open-source recipe stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Beryl Labs",
+  "license": "MIT",
+  "devDependencies": {
+    "expo": "^49.0.21"
+  }
+}
