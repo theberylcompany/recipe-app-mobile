@@ -1,0 +1,280 @@
+/* 
+        POSITIONING STYLES
+*/
+.relative {
+    position: relative;
+}
+
+.rel {
+    position: relative;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.static {
+    position: static;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.abs {
+    position: absolute;
+}
+
+/* 
+        STACKING CLASSES
+ */
+
+.top\:1 {
+    top: 1vh;
+}
+
+.top\:2 {
+    top: 2vh;
+}
+
+.top\:3 {
+    top: 3vh;
+}
+
+.top\:4 {
+    top: 4vh;
+}
+
+.top\:5 {
+    top: 5vh;
+}
+
+.top\:6 {
+    top: 2vh;
+}
+
+.top\:7 {
+    top: 3vh;
+}
+
+.top\:8 {
+    top: 4vh;
+}
+
+.top\:9 {
+    top: 5vh;
+}
+
+.top\:10 {
+    top: 10vh;
+}
+
+.top\:15 {
+    top: 15vh;
+}
+
+.top\:20 {
+    top: 20vh;
+}
+
+.left {
+    left: 0.2rem;
+}
+
+.right {
+    right: 0.2rem;
+}
+
+.bot {
+    bottom: 0.2rem;
+}
+
+/* 
+        TRANSLATION CLASSES
+ */
+
+ /* to right --> */
+.trans\:x\:1 {
+    transform: translateX(1vw);
+}
+
+.trans\:x\:2 {
+    transform: translateX(2vw);
+}
+
+.trans\:x\:3 {
+    transform: translateX(3vw);
+}
+
+.trans\:x\:4 {
+    transform: translateX(4vw);
+}
+
+.trans\:x\:5 {
+    transform: translateX(5vw);
+}
+
+/* <-- to left */
+
+.trans\:x\:\-1 {
+    transform: translateX(-1vw);
+}
+
+.trans\:x\:\-2 {
+    transform: translateX(-2vw);
+}
+
+.trans\:x\:\-3 {
+    transform: translateX(-3vw);
+}
+
+.trans\:x\:\-4 {
+    transform: translateX(-4vw);
+}
+
+.trans\:x\:\-5 {
+    transform: translateX(-5vw);
+}
+
+/* 
+|
+|   downwards
+v
+*/
+
+.trans\:y\:1 {
+    transform: translateY(1vh);
+}
+
+.trans\:y\:2 {
+    transform: translateY(2vh);
+}
+
+.trans\:y\:3 {
+    transform: translateY(3vh);
+}
+
+.trans\:y\:4 {
+    transform: translateY(4vh);
+}
+
+.trans\:y\:5 {
+    transform: translateY(5vh);
+}
+
+/* 
+^   
+|   upwards
+|
+*/
+.trans\:y\:\-1 {
+    transform: translateY(-1vh);
+}
+
+.trans\:y\:\-2 {
+    transform: translateY(-2vh);
+}
+
+.trans\:y\:\-3 {
+    transform: translateY(-3vh);
+}
+
+.trans\:y\:\-4 {
+    transform: translateY(-4vh);
+}
+
+.trans\:y\:\-5 {
+    transform: translateY(-5vh);
+}
+
+/* Approach  */
+.trans\:z\:1 {
+    transform: translateZ(1rem);
+}
+
+.trans\:z\:2 {
+    transform: translateZ(2rem);
+}
+
+.trans\:z\:3 {
+    transform: translateZ(3rem);
+}
+
+.trans\:z\:4 {
+    transform: translateZ(4rem);
+}
+
+.trans\:z\:5 {
+    transform: translateZ(5rem);
+}
+
+/* Away */
+.trans\:z\:\-1 {
+    transform: translateZ(-1rem);
+}
+
+.trans\:z\:\-2 {
+    transform: translateZ(-2rem);
+}
+
+.trans\:z\:\-3 {
+    transform: translateZ(-3rem);
+}
+
+.trans\:z\:\-4 {
+    transform: translateZ(-4rem);
+}
+
+.trans\:z\:\-5 {
+    transform: translateZ(-5rem);
+}
+
+/* 
+    COMBO TRANSFORM
+*/
+
+.trans\:xy\:1 {
+    transform: translate3D(1vh, 1vh, 0);
+}
+
+.trans\:xy\:2 {
+    transform: translate3D(2vh, 2vh, 0);
+}
+
+.trans\:xy\:3 {
+    transform: translate3D(3vh, 3vh, 0);
+}
+
+.trans\:xy\:4 {
+    transform: translate3D(4vh, 4vh, 0);
+}
+
+.trans\:xy\:5 {
+    transform: translate3D(5vh, 5vh, 0);
+}
+
+/* 
+^   
+|   upwards
+|
+*/
+.trans\:xy\:\-1 {
+    transform: translate3D(-1vh, -1vh, 0);
+}
+
+.trans\:xy\:\-2 {
+    transform: translate3D(-2vh, -2vh, 0);
+}
+
+.trans\:xy\:\-3 {
+    transform: translate3D(-3vh, -3vh, 0);
+}
+
+.trans\:xy\:\-4 {
+    transform: translate3D(-4vh, -4vh, 0);
+}
+
+.trans\:xy\:\-5 {
+    transform: translate3D(-5vh, -5vh, 0);
+}

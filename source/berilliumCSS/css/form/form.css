@@ -1,0 +1,13 @@
+.signup\:name{
+    height: 5vh;
+    width: 25vw;
+    border: none;
+}
+
+.signup\:name:valid{
+    border: green 1px solid;
+}
+
+.signup\:name:invalid{
+    border: red 1px solid;
+}

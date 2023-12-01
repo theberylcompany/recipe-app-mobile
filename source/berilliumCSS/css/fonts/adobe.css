@@ -1,0 +1,29 @@
+:root {
+
+    /* Fonts */
+    --primary-font: 'Korolev Rounded Medium';
+    --light-font: 'Korolev Rounded Thin';
+    --thin-font:  'Korolev Rounded Light';
+    --bold-font: 'Korolev Rounded Bold';
+    --heavy-font: 'Korolev Rounded Heavy';
+
+}
+
+/* Brand */
+.text\:font\:primary {
+    font-family: "korolev-rounded", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.text\:font\:light {
+    font-family: "korolev", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.text\:font\:bold {
+    font-family: "korolev", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}

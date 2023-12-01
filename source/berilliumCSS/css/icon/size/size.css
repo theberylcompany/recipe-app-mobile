@@ -1,0 +1,31 @@
+
+/* SIZING */
+.icon\:xs {
+    height: 12px;
+    width: 12px;
+}
+
+.icon\:sm {
+    height: 24px;
+    width: 24px;
+}
+
+.icon\:md {
+    height: 36px;
+    width: 36px;
+}
+
+.icon\:lg {
+    height: 48px;
+    width: 48px;
+}
+
+.icon\:xl {
+    height: 60px;
+    width: 60px;
+}
+
+.icon\:xxl {
+    height: 72px;
+    width: 72px;
+}
