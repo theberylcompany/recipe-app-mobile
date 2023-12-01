@@ -1,4 +1,3 @@
-import {StyleSheet} from 'react-native';
 import * as Font from 'expo-font';
 
 async function loadFonts() {
@@ -6,21 +5,10 @@ async function loadFonts() {
         'Poppins-Black': require('../../../assets/font/Poppins/Poppins-Black.ttf'),
         'Poppins-Regular': require('../../../assets/font/Poppins/Poppins-Regular.ttf'),
         'Poppins-Light': require('../../../assets/font/Poppins/Poppins-Light.ttf'),
+        'Playfair-Regular': require('../../../assets/font/Playfair_Display/static/PlayfairDisplay-Regular.ttf'),
+        'Playfair-Bold': require('../../../assets/font/Playfair_Display/static/PlayfairDisplay-Bold.ttf'),
         // Include other fonts here
     });
 }
 
-let poppins = {
-    black: {
-        fontFamily: 'Poppins-Black'
-    },
-    light: {
-        fontFamily: 'Poppins-Light'
-    },
-    regular: {
-        fontFamily: 'Poppins-Regular'
-    }
-}
-
-loadFonts()
-export default poppins
+export default loadFonts

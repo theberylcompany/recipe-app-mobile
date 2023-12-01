@@ -1,9 +1,34 @@
+import { useState, useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
+import { StyleSheet, Text, View, Button, TextInput, TouchableOpacity, ActivityIndicator } from 'react-native';
+import loadFonts from './js/berillium-native/font/font';
 import  reds  from './js/berillium-native/config';
-import poppins from './js/berillium-native/font/font';
+import poppins from './js/berillium-native/font/fonts';
+import flat from './js/berillium-native/button/flat';
+
 
 export default function App() {
+  const [fontLoaded, setFontLoaded] = useState(false);
+
+  useEffect(() => {
+    async function load() {
+      try {
+        await loadFonts();
+        setFontLoaded(true);
+      } catch (error) {
+        console.error("Error loading fonts", error);
+        // Optionally, handle the error more gracefully
+      }
+    }
+
+    load();
+  }, []);
+
+  if (!fontLoaded) {
+    return <View style={styles.container}><ActivityIndicator size="large" /></View>;
+  }
+
+
   return (
     <View style={styles.container}>
     <View>
@@ -15,10 +40,12 @@ export default function App() {
       <Button title="Login" />
     </View>
     
-    <View>
-      <Text style={poppins.light}>Quinoa Salad</Text>
-      <Button color={reds.buttonBlue.color} title="Click Me"></Button>
-    </View>
+      <View>
+        <Text style={[poppins.heading]}>Quinoa Salad</Text>
+          <TouchableOpacity style={[flat.bordered]}>
+            <Text style={poppins.light}>Touche</Text>
+          </TouchableOpacity>
+      </View>
     </View>
   );
 }
