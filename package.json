@@ -10,5 +10,9 @@
   "license": "MIT",
   "devDependencies": {
     "expo": "^49.0.21"
+  },
+  "dependencies": {
+    "react-native-screens": "~3.22.0",
+    "react-native-safe-area-context": "4.6.3"
   }
 }
