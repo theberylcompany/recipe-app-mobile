@@ -8,21 +8,33 @@ import { login } from '../js/berillium-native/form/form';
 const Login = () => {
   return (
     <View style={styles.container}>
-        <View>
-          <Text style={[heading.h2, poppins.regular]}>Log In</Text>
-          <TextInput style={login.field}/>
-          <Text style={[heading.h2, poppins.regular]}>Password</Text>
-          <TextInput style={login.field}/>
-          <StatusBar />
-              <View style={margin.top}>
-                <Button title="Login" />
-               </View>
+        <View style={margin.top}>
+          <View style={margin.top}>
+            <Text style={[heading.h2, poppins.regular]}>Log In</Text>
+            <TextInput style={[login.field, poppins.light]}/>
+          </View>
+
+          <View style={margin.topMd}>
+            <Text style={[heading.h2, poppins.regular]}>Password</Text>
+            <TextInput style={[login.field, poppins.light]}/>
+            <StatusBar />
+          </View>
+
+          <View style={margin.topMd}>
+            <Button title="Login" />
+          </View>
+
+          <View style={margin.topSm}>
+            <Button title="Signup" color="red" />
+          </View>
         </View>
-        <View>
-            <Text>Home Bar with Icons</Text>
-        </View>
+
         <View>
           <Text style={poppins.light}>A Beryl Labs application</Text>
+        </View>
+        
+        <View>
+            <Text>Home Bar with Icons</Text>
         </View>
     </View>
   );
