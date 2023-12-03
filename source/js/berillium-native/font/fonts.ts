@@ -11,7 +11,12 @@ let poppins = StyleSheet.create({
         fontFamily: 'Poppins-Regular'
     },
     heading: {
-        fontSize: 24,
+        fontSize: 36,
+        fontFamily: 'Playfair-Regular',
+        color: '#565656'
+    },
+    headingLogin: {
+        fontSize: 20,
         fontFamily: 'Playfair-Regular'
     }
 })

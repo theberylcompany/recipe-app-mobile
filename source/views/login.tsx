@@ -1,31 +1,41 @@
 
-import {Button, View, StatusBar, StyleSheet,  Text, TextInput} from 'react-native';
+import {Button, View, StatusBar, StyleSheet,  Text, TextInput, TouchableOpacity} from 'react-native';
 import { heading } from '../js/berillium-native/text/text';
 import poppins from '../js/berillium-native/font/fonts';
 import { margin } from '../js/berillium-native/spacing/margin';
 import { login } from '../js/berillium-native/form/form';
+import Bar from '../js/berillium-native/bar/bar';
+import flex from '../js/berillium-native/flex/flex';
+import {HomeIcon, MessagesIcon, UserIcon, SettingsIcon} from '../js/berillium-native/icon/icon';
 
 const Login = () => {
   return (
     <View style={styles.container}>
         <View style={margin.top}>
+        <Text style={poppins.heading}>Mia Makes</Text>
           <View style={margin.top}>
-            <Text style={[heading.h2, poppins.regular]}>Log In</Text>
+            <Text style={[heading.h2, poppins.headingLogin]}>Log In</Text>
             <TextInput style={[login.field, poppins.light]}/>
+            <Text style={float.right}>Forgot Username?</Text>
           </View>
 
           <View style={margin.topMd}>
-            <Text style={[heading.h2, poppins.regular]}>Password</Text>
+            <Text style={[heading.h2, poppins.headingLogin]}>Password</Text>
             <TextInput style={[login.field, poppins.light]}/>
+            <Text style={float.right}>Forgot Password?</Text>
             <StatusBar />
           </View>
 
-          <View style={margin.topMd}>
-            <Button title="Login" />
+          <View style={[margin.topMd, {justifyContent: 'center', alignItems: 'center' }]}>
+          <TouchableOpacity style={{backgroundColor: '#5B3D83', height: 35, width: 150, justifyContent: 'center', alignItems: 'center', borderRadius: 8}}>
+                <Text style={[poppins.regular, {color: 'white'}]}>Login</Text>
+            </TouchableOpacity>
           </View>
 
-          <View style={margin.topSm}>
-            <Button title="Signup" color="red" />
+          <View style={[margin.topSm, {justifyContent: 'center', alignItems: 'center'}]}>
+            <TouchableOpacity style={{backgroundColor: '#E15E5E', height: 35, width: 150, justifyContent: 'center', alignItems: 'center', borderRadius: 8}}>
+                <Text style={[poppins.regular, {color: 'white'}]}>Signup</Text>
+            </TouchableOpacity>
           </View>
         </View>
 
@@ -33,8 +43,11 @@ const Login = () => {
           <Text style={poppins.light}>A Beryl Labs application</Text>
         </View>
         
-        <View>
-            <Text>Home Bar with Icons</Text>
+        <View style={[Bar.home, flex.row, flex.around, flex.center]}>
+                <View style={{height: 48, width: 48}}><HomeIcon /></View>
+                <View style={{height: 48, width: 48}}><UserIcon /></View>
+                <View style={{height: 48, width: 48}}><MessagesIcon /></View>
+                <View style={{height: 48, width: 48}}><SettingsIcon /></View>
         </View>
     </View>
   );
@@ -46,9 +59,17 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginTop: 150
+    paddingTop: 45
   },
 });
+
+const float = StyleSheet.create({
+  right: {
+    display: 'flex',
+    justifyContent: 'flex-end',
+    alignItems: 'flex-end'
+  }
+})
 
 export default Login;
 

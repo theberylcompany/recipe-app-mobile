@@ -30,6 +30,9 @@ const flex = StyleSheet.create({
     },
     wrapRev: {
         flexWrap: 'wrap-reverse'
+    },
+    row: {
+        flexDirection: 'row'
     }
 });
 
